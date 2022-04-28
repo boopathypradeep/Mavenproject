@@ -1,0 +1,71 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "validate facebook login with valid username and password",
+        "description": "",
+        "id": "validate-login-functionalities-of-facebook-login;validate-facebook-login-with-valid-username-and-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4732620200,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "user is on login page of facebook in chromebrowser",
+            "match": {
+              "location": "StepDef.user_is_on_login_page_of_facebook_in_chromebrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 401014500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user enter valid username and password",
+            "match": {
+              "location": "StepDef.user_enter_valid_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97806900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks login button",
+            "match": {
+              "location": "StepDef.user_clicks_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 171600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should verify the successfull login of facebook",
+            "match": {
+              "location": "StepDef.user_should_verify_the_successfull_login_of_facebook()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "validate login functionalities of facebook login",
+    "description": "",
+    "id": "validate-login-functionalities-of-facebook-login",
+    "keyword": "Feature",
+    "uri": "src/test/resource/FeatureFile.feature",
+    "tags": []
+  }
+]
