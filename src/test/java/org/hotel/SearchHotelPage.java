@@ -1,43 +1,66 @@
-package org.hotel;
+gpackage org.hotel;
 
+import org.baseclass.BaseClass;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class SearchHotelPage {
-	static WebDriver driver;
-@Test
-public void location() {
-
-	    
-	WebElement element = driver.findElement(By.id("location"));
-	Select select=new Select(element);
-	select.selectByVisibleText("Sydney"); 
-	WebElement element2 = driver.findElement(By.id("hotels"));
-	Select select2=new Select(element2);
-	select2.selectByVisibleText("Hotel Sunshine");
-	WebElement findElement = driver.findElement(By.id("room_type"));
-	Select select3=new Select(findElement);
-	select3.selectByVisibleText("Standard");
-	WebElement element4 = driver.findElement(By.id("room_nos"));
-	Select select4=new Select(element4);
-	select4.selectByVisibleText("1 - One");
-	WebElement findElement2 = driver.findElement(By.id("datepick_in"));
-	findElement2.sendKeys("22-04=2022");
-	WebElement findElement3 = driver.findElement(By.id("datepick_out"));
-	findElement2.sendKeys("24-04=2022");
-	WebElement findElement4 = driver.findElement(By.id("adult_room"));
-	Select select5=new Select(findElement4);
-	select.selectByVisibleText("1");
-	WebElement findElement5 = driver.findElement(By.id("child_room"));
-	Select select6=new Select(findElement5);
-	select6.selectByVisibleText("2");
-	WebElement btnClick = driver.findElement(By.xpath("//input[@id=\"Submit\"]"));
-	btnClick.click();
+public class SearchHotelPage extends BaseClass {
+	public SearchHotelPage() {
+		PageFactory.initElements(driver, this);
+	}
+@FindBy(id="location")
+private WebElement location;
+@FindBy(id="hotels")
+private WebElement hotels;
+@FindBy(id="room_type")
+private WebElement roomType;
+@FindBy(id="room_nos")
+private WebElement roomNos;
+@FindBy(id="datepick_in")
+private WebElement checkIn;
+@FindBy(id="datepick_out")
+private WebElement checkOut;
+@FindBy(id="adult_room")
+private WebElement adult;
+@FindBy(id="child_room")
+private WebElement children;
+@FindBy(id="Submit")
+private WebElement sumbit;
+public WebElement getLocation() {
+	return location;
 }
+public WebElement getHotels() {
+	return hotels;
+}
+public WebElement getRoomType() {
+	return roomType;
+}
+public WebElement getRoomNos() {
+	return roomNos;
+}
+public WebElement getCheckIn() {
+	return checkIn;
+}
+public WebElement getCheckOut() {
+	return checkOut;
+}
+public WebElement getAdult() {
+	return adult;
+}
+public WebElement getChildren() {
+	return children;
+}
+public WebElement getSumbit() {
+	return sumbit;
+}
+
+
 }

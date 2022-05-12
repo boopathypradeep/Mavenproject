@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="org.testngg.FaceBook">
+      <class name="org.testnghotel.SearchHotelss">
         <methods>
-          <include name="endTiming"/>
-          <include name="launchBrowser"/>
-          <include name="tc02"/>
-          <include name="startTiming"/>
+          <include name="searchPage"/>
         </methods>
-      </class> <!-- org.testngg.FaceBook -->
+      </class> <!-- org.testnghotel.SearchHotelss -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

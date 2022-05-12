@@ -2,17 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
-    <parameter name="possword" value="aravindh"/>
-    <parameter name="username" value="Boopathy"/>
     <classes>
-      <class name="com.tstng.Facebook">
+      <class name="org.testnghotel.SearchHotelss">
         <methods>
-          <include name="endTime"/>
-          <include name="startTime"/>
-          <include name="passWord"/>
-          <include name="lauchBrowser"/>
+          <include name="searchPage"/>
         </methods>
-      </class> <!-- com.tstng.Facebook -->
+      </class> <!-- org.testnghotel.SearchHotelss -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

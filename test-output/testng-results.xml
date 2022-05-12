@@ -1,11 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19" started-at="2022-04-27T13:44:57Z" finished-at="2022-04-27T13:44:57Z">
+  <suite name="Suite" duration-ms="7406" started-at="2022-05-03T06:14:41Z" finished-at="2022-05-03T06:14:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19" started-at="2022-04-27T13:44:57Z" finished-at="2022-04-27T13:44:57Z">
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    <test name="Test" duration-ms="7406" started-at="2022-05-03T06:14:41Z" finished-at="2022-05-03T06:14:49Z">
+      <class name="org.testnghotel.SearchHotelss">
+        <test-method status="FAIL" signature="searchPage()[pri:0, instance:org.testnghotel.SearchHotelss@6e1ec318]" name="searchPage" duration-ms="2" started-at="2022-05-03T06:14:49Z" finished-at="2022-05-03T06:14:49Z">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problems: 
+Syntax error on token "gpackage", package expected
+The declared package "" does not match the expected package "org.hotel"
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problems: 
+Syntax error on token "gpackage", package expected
+The declared package "" does not match the expected package "org.hotel"
+
+at org.hotel.SearchHotelPage.<init>(SearchHotelPage.java:1)
+at org.testnghotel.SearchHotelss.searchPage(SearchHotelss.java:14)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPage -->
+      </class> <!-- org.testnghotel.SearchHotelss -->
+      <class name="org.testnghotel.Adactin">
+        <test-method status="PASS" signature="browser()[pri:0, instance:org.testnghotel.Adactin@10bdf5e5]" name="browser" is-config="true" duration-ms="5905" started-at="2022-05-03T06:14:41Z" finished-at="2022-05-03T06:14:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method status="PASS" signature="tc01()[pri:0, instance:org.testnghotel.Adactin@10bdf5e5]" name="tc01" duration-ms="1422" started-at="2022-05-03T06:14:47Z" finished-at="2022-05-03T06:14:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01 -->
+      </class> <!-- org.testnghotel.Adactin -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

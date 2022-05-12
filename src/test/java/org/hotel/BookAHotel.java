@@ -1,60 +1,63 @@
 package org.hotel;
 
+import org.baseclass.BaseClass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import comp.pom.BaseClass;
+
+
 
 public class BookAHotel extends BaseClass {
 	public BookAHotel() {
 PageFactory.initElements(driver, this);
 	}
 @FindBy(id="first_name")
-private WebElement firstName;
+private static WebElement firstName;
 @FindBy(id="last_name")
-private WebElement lastName;
+private static WebElement lastName;
 @FindBy(id="address")
-private WebElement address;
+private static WebElement address;
 @FindBy(id="cc_num")
-private WebElement creditCard;
+private static WebElement creditCard;
 @FindBy(id="cc_type")
-private WebElement cardType;
-@FindBy(id="cc_exp_month")
+private static WebElement cardType;
+@FindBy(xpath="//select[@name=\"cc_exp_month\"][@id=\"cc_exp_month\"]")
 private WebElement expMonth;
 @FindBy(id="cc_exp_year")
-private WebElement expyear;
+private WebElement exYear;
 @FindBy(id="cc_cvv")
-private WebElement cvvNo;
-@FindBy(id="cancel")
-private WebElement cancel;
-public WebElement getFirstName() {
-	return firstName;
-}
-public WebElement getLastName() {
-	return lastName;
-}
-public WebElement getAddress() {
-	return address;
-}
-public WebElement getCreditCard() {
-	return creditCard;
-}
-public WebElement getCardType() {
-	return cardType;
+private WebElement ccvno;
+@FindBy(id="book_now")
+private WebElement btnBookNow;
+public WebElement getBtnBookNow() {
+	return btnBookNow;
 }
 public WebElement getExpMonth() {
 	return expMonth;
 }
-public WebElement getExpyear() {
-	return expyear;
+public WebElement getExYear() {
+	return exYear;
 }
-public WebElement getCvvNo() {
-	return cvvNo;
+public WebElement getCcvno() {
+	return ccvno;
 }
-public WebElement getCancel() {
-	return cancel;
+public static WebElement getFirstName() {
+	return firstName;
 }
+public static WebElement getLastName() {
+	return lastName;
+}
+public static WebElement getAddress() {
+	return address;
+}
+public static WebElement getCreditCard() {
+	return creditCard;
+}
+public static WebElement getCardType() {
+	return cardType;
+}
+
 
 
 
