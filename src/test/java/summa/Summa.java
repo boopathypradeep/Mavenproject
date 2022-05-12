@@ -14,6 +14,10 @@ public class Summa {
 		System.out.println("hai");
 		System.out.println("hello");
 		System.out.println("hai");
+		System.out.println("hello");
+		System.out.println("hai");
+
+
 	}
 
 }
