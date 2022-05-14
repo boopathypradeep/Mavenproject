@@ -57,7 +57,7 @@ Workbook w=new XSSFWorkbook(new FileInputStream(new File("C:\\Users\\HP\\eclipse
 return w.getSheet("Sheet1").getRow(rowno).getCell(columnno).getStringCellValue();
 
 }
-public String excelRead(int rowno, int columnno) throws IOException {
+public String excelRead(String string2, int rowno, int columnno) throws IOException {
 	File file=new File("C:\\Users\\HP\\eclipse-workspace\\MvnProjects\\src\\test\\java\\ExcelSheet\\Task manualtesting.xlsxs");
 	FileInputStream stream=new FileInputStream(file);
 	Workbook workbook=new XSSFWorkbook(stream);
