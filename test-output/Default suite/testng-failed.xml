@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.apitesting.Jsonpathsss">
+      <class name="org.rerun.Sample">
         <methods>
-          <include name="addAddress"/>
+          <include name="page1"/>
         </methods>
-      </class> <!-- org.apitesting.Jsonpathsss -->
+      </class> <!-- org.rerun.Sample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

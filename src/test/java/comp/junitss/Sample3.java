@@ -10,32 +10,25 @@ import junit.framework.Assert;
 
 public class Sample3 {
 	@Test
-	public void tc01() {
-System.out.println("Test 1");
+	public void tc09() {
+System.out.println("Test 9");
 	}
 	@Test
-	public void tc02() {
-		String s="Test 2";
-		System.out.println(s);
-assertNotEquals("Test 2", s);
-System.out.println("hello");
+	public void tc10() {
+	
+System.out.println("Test 10");
 		
 
 	}
 	@Test
-	public void tc03() {
-		assertTrue(false);
-		System.out.println("Test 3");
+	public void tc11() {
+		System.out.println("Test 11");
 	}
 	@Test
-	public void tc04() {
-		System.out.println("Test 4");
+	public void tc12() {
+		System.out.println("Test 12");
 
 	}
-@Test
-public void tc05() {
-	System.out.println("Test 5");
 
-}
 
 }

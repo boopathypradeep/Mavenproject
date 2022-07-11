@@ -1,33 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9776" started-at="2022-05-13T16:52:56Z" finished-at="2022-05-13T16:53:05Z">
+  <suite name="Default suite" duration-ms="13140" started-at="2022-07-11T11:17:15Z" finished-at="2022-07-11T11:17:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9776" started-at="2022-05-13T16:52:56Z" finished-at="2022-05-13T16:53:05Z">
-      <class name="org.apitesting.Jsonpathsss">
-        <test-method status="PASS" signature="dataGetting()[pri:1, instance:org.apitesting.Jsonpathsss@3327bd23]" name="dataGetting" duration-ms="6554" started-at="2022-05-13T16:52:56Z" finished-at="2022-05-13T16:53:02Z">
+    <test name="Default test" duration-ms="13140" started-at="2022-07-11T11:17:15Z" finished-at="2022-07-11T11:17:28Z">
+      <class name="org.rerun.Sample">
+        <test-method status="PASS" signature="page1(java.lang.String, java.lang.String)[pri:0, instance:org.rerun.Sample@31610302]" name="page1" duration-ms="5034" started-at="2022-07-11T11:17:15Z" data-provider="sampleDatas" finished-at="2022-07-11T11:17:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[boopathy]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pradeep]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dataGetting -->
-        <test-method status="PASS" signature="addAddress()[pri:2, instance:org.apitesting.Jsonpathsss@3327bd23]" name="addAddress" duration-ms="814" started-at="2022-05-13T16:53:02Z" finished-at="2022-05-13T16:53:03Z">
+        </test-method> <!-- page1 -->
+        <test-method status="PASS" signature="page1(java.lang.String, java.lang.String)[pri:0, instance:org.rerun.Sample@31610302]" name="page1" duration-ms="3581" started-at="2022-07-11T11:17:20Z" data-provider="sampleDatas" finished-at="2022-07-11T11:17:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gnana]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[prakash]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addAddress -->
-        <test-method status="PASS" signature="updateAddress()[pri:3, instance:org.apitesting.Jsonpathsss@3327bd23]" name="updateAddress" duration-ms="795" started-at="2022-05-13T16:53:03Z" finished-at="2022-05-13T16:53:04Z">
+        </test-method> <!-- page1 -->
+        <test-method status="PASS" signature="page1(java.lang.String, java.lang.String)[pri:0, instance:org.rerun.Sample@31610302]" name="page1" duration-ms="4463" started-at="2022-07-11T11:17:24Z" data-provider="sampleDatas" finished-at="2022-07-11T11:17:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[raja]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sekaran]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateAddress -->
-        <test-method status="PASS" signature="getAddress()[pri:4, instance:org.apitesting.Jsonpathsss@3327bd23]" name="getAddress" duration-ms="848" started-at="2022-05-13T16:53:04Z" finished-at="2022-05-13T16:53:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getAddress -->
-        <test-method status="PASS" signature="deleteAddress()[pri:5, instance:org.apitesting.Jsonpathsss@3327bd23]" name="deleteAddress" duration-ms="719" started-at="2022-05-13T16:53:05Z" finished-at="2022-05-13T16:53:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteAddress -->
-      </class> <!-- org.apitesting.Jsonpathsss -->
+        </test-method> <!-- page1 -->
+      </class> <!-- org.rerun.Sample -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

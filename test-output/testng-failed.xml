@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="edgebrowser(failed)">
+    <parameter name="browser" value="edge"/>
     <classes>
-      <class name="org.apitesting.Jsonpathsss">
+      <class name="org.rerun.Sample">
         <methods>
-          <include name="addAddress"/>
+          <include name="page1" invocation-numbers="0"/>
         </methods>
-      </class> <!-- org.apitesting.Jsonpathsss -->
+      </class> <!-- org.rerun.Sample -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- edgebrowser(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -13,18 +13,22 @@ import org.junit.runners.Suite.SuiteClasses;
 @SuiteClasses({Sample1.class, Sample2.class, Sample3.class})
 
 public class SuiteClass {
-public static void main(String[] args) {
-	Result r = JUnitCore.runClasses(Sample1.class, Sample2.class, Sample3.class);
-	int runCount = r.getRunCount();
-	System.out.println(runCount);
-	int i = r.getIgnoreCount();
-	System.out.println(i);
-	int f = r.getFailureCount();
-	System.out.println(f);
-	List<Failure> failures = r.getFailures();
-	for (Failure failure : failures) {
-		System.out.println(failure);
+	public static void main(String[] args) {
+		Result r = JUnitCore.runClasses(Sample1.class,Sample2.class,Sample3.class);
+		int runCount = r.getRunCount();
+		System.out.println("run count is:"+runCount);
+		int ignoreCount = r.getIgnoreCount();
+		System.out.println("ignore count is:"+ignoreCount);
+		int failureCount = r.getFailureCount();
+		System.out.println("failure count is:"+failureCount);
+		List<Failure> failures = r.getFailures();
+		for (Failure failure : failures) {
+			System.out.println("failures are:"+failure);
+			
+		}
+		
 		
 	}
-}
+
+
 }

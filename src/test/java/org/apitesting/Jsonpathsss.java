@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.profilepicture.BaseClass;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -16,7 +17,7 @@ import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
 
 public class Jsonpathsss extends BaseClass {
-	public static String logToken="eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjIyMDE2ZjExZDhlZGUwMjFhY2UyOTM5ZGRlYWU5ZTIxYmZiYzk5YTkxYjRmOTZjMTI4ZTY2MjQ2OTA5ZTcyNzgzYTNjYTYxNTU0ODg0OWMzIn0.eyJhdWQiOiIxIiwianRpIjoiMjIwMTZmMTFkOGVkZTAyMWFjZTI5MzlkZGVhZTllMjFiZmJjOTlhOTFiNGY5NmMxMjhlNjYyNDY5MDllNzI3ODNhM2NhNjE1NTQ4ODQ5YzMiLCJpYXQiOjE2NTI0NTkyNDMsIm5iZiI6MTY1MjQ1OTI0MywiZXhwIjoxNjgzOTk1MjQzLCJzdWIiOiIxNzUiLCJzY29wZXMiOltdfQ.SgpOsOYeS5e1Jt07cuL9Pi7UbEB13CYUQTCwG6EUittCzM70HAsSvc8XUBx8rFpsP_n0ArHHwOv8o5_HcQLrQ0AQnli11OfO-UQ2fLxOYsbS_oWdWNT2h2VWaeFLs0MNFBBNiPJrrOiKKRW2igUlAm_cLTcMwkBdjqDeKYrO71MnLM9GXh0q1ALTMQBY3LIcowRZ99v-q9EsTIIctJhBmfAEH1xszu_1ayPNzLh9lXpIVnE6FO2qoYgDy1mi-8nehtMb1nwnq6MNFbkl7iWpScjos4EGttypfTV8tJcg-TwNFWjSTrdlwzW3i-wNvBWcHDUq3UUErUQfpDXBcyG3BD93tgGkYSy5ozlRr26XpSleLr_-TpbqUQpq0pT3tZOaMdPa9c4SPRSPmIcU06rM852GB55L7NtWPHymhjeX_SClzvLtG2WAunq6sIi6ZPulBo73-goyTZJwcRMhcKHbwrn46kQwjoSHUpFePirYNSr7F33UkCOpTUq5oPkJmMRBDxsXHAYueZGxxePBzyzEXNjk5oAIcWH6fNyQJSSlJfnqfbGlz1NH-X9boBDbRFjOjL3qGqR-fDX5Vdm_cZbZQwPSllB4KiIfvDx42NBP1To2OOrL7To6oCLfhlxxYbyfsinPI7LiInO8rOHdso7FPnZssC31zpI-R7Fq6LTpNfw";
+	public static String logToken;
 	public static int address_id=1215;
 	@Test(priority=1)
 	private void dataGetting() throws IOException {
@@ -31,6 +32,8 @@ System.out.println(responseBody.asPrettyString());
 JsonPath jsonPath = responseBody.jsonPath();
 Object msg = jsonPath.get("message");
 String s=(String) msg;
+Object object = jsonPath.get("data.logtoken");
+logToken=(String) object;
 
 Assert.assertEquals(msg, "Login successfully","login done successfully");
 

@@ -28,23 +28,23 @@ private void login(String username, String password) {
 clickss(element3);
 
 }
-//@DataProvider(name="datas")
-//private Object[][] datas() {
-//	return new Object[][]{
-//		{"ram sarath","12345"},
-//		{"boopathy","4567890"},
-//		{"gnanaprakash","56789076"}
-//	};
-//}
-@DataProvider
-private Object[][] datas() throws FileNotFoundException, IOException {
-	return new Object[][] {
-		{excelDatas(0, 0),excelDatas(0, 1)},
-		{excelDatas(1, 0),excelDatas(1, 1)},
-		
+@DataProvider(name="datas")
+private Object[][] datas() {
+	return new Object[][]{
+		{"ram sarath","12345"},
+		{"boopathy","4567890"},
+		{"gnanaprakash","56789076"}
 	};
-
 }
+//@DataProvider
+//private Object[][] datas() throws FileNotFoundException, IOException {
+//	return new Object[][] {
+//		{excelDatas(0, 0),excelDatas(0, 1)},
+//		{excelDatas(1, 0),excelDatas(1, 1)},
+//		
+//	};
+
+//}
 @AfterTest
 private void quitBrowser() {
 	closeBrowser();
